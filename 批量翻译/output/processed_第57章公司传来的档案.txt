@@ -1,0 +1,1 @@
+生成文本时出错: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Max retries exceeded with url: /v1beta/models/gemini-2.5-pro-exp-03-25:generateContent?%24alt=json%3Benum-encoding%3Dint (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))

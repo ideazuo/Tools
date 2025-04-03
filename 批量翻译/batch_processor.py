@@ -46,9 +46,9 @@ def process_files(api_key, system_instructions, input_dir, output_dir):
 if __name__ == "__main__":
     # 示例用法
     api_key = "AIzaSyDS9TuQCWE-r3SwWrE_SvMxYJASBFHIwW0"  # 替换为你的API密钥
-    system_instructions_file = "system_instructions.txt"  # 系统指令文件路径
-    input_directory = "input"  # 输入目录路径
-    output_directory = "output"  # 输出目录路径
+    system_instructions_file = os.path.join(os.path.dirname(__file__), "system_instructions.txt")  # 系统指令文件路径
+    input_directory = os.path.join(os.path.dirname(__file__), "input")  # 输入目录路径
+    output_directory = os.path.join(os.path.dirname(__file__), "output")  # 输出目录路径
     
     # 读取系统指令
     instructions = read_system_instructions(system_instructions_file)
